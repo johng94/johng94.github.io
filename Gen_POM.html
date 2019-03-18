@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Order Management</title>
+</head>
+<body>
+
+<form>
+
+    <br>
+
+    <!--
+        Purchase Order # is auto generated. Iterated by 1 each time - for each successive purchase order
+    -->
+    Purchase Order # : <input type = "text" name = "Purchase_Order_#"><br>
+
+    <!--
+        You designate the supplier you are using for each PO by entering the supplier name below. Will probably
+        implement a drop down menu for this as well
+    -->
+    Supplier Name : <input type = "text" name = "Supplier_Name"><br>
+
+    Supplier # : <input type = "text" name = "Supplier_#"><br>
+
+    Supplier Address : <input type = "text" name = "Supplier_Address"><br>
+
+    <br>
+    <!--
+        When you select the item you are buying from the supplier, there is a drop down list of
+        available items from that specific supplier
+    -->
+    Item : <select name = "item">
+
+        <option value = "item1"> </option>
+        <option value = "item2"> </option>
+        <option value = "item3"> </option>
+        <option value = "item4"> </option>
+
+    </select>
+
+    Quantity : <input type = "text" name = "Quantity"><br>
+
+    Item # : <input type = "text" name = "Item_Number"><br>
+
+    <!--
+        If you want multiple items from one supplier, we can implement an add button below.
+        OR
+        You need to fill out a new PO form..
+    -->
+
+    <button type = "button">Purchase</button>
+
+</form>
+</body>
+</html>

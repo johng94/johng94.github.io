@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Management</title>
+</head>
+<body>
+
+<form>
+
+    <br>
+
+    <!--
+        Order # is auto generated. Iterated by 1 each time - for each successive purchase order
+    -->
+    Order # : <input type = "text" name = "Order_#"><br>
+
+    <!--
+        You designate the customer you are using for each Order by entering the customer name below. Will probably
+        implement a drop down menu for this as well.
+    -->
+    Customer Name : <input type = "text" name = "Customer_Name"><br>
+
+    Customer # : <input type = "text" name = "Customer_#"><br>
+
+    Customer Address : <input type = "text" name = "Customer_Address"><br>
+
+    <br>
+    <!--
+        When you select the item you are buying from the customer, there is a drop down list of
+        available items from that specific customer.
+    -->
+    Item : <select name = "item">
+
+        <option value = "item1"> </option>
+        <option value = "item2"> </option>
+        <option value = "item3"> </option>
+        <option value = "item4"> </option>
+
+    </select>
+
+    Quantity : <input type = "text" name = "Quantity"><br>
+
+    Item # : <input type = "text" name = "Item_Number"><br>
+
+    <!--
+        If a customer wants multiple items, we can implement an add button below.
+        OR
+        The customer needs to fill out a new Order form.
+    -->
+
+    <button type = "button">Purchase</button>
+
+</form>
+
+</body>
+</html>
