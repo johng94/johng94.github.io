@@ -54,7 +54,7 @@ input {
   font-size: 1.5em;
   margin-bottom: 0px;
   margin-left: 0px;
-  margin-top: 30px;
+  margin-top: 0px;
   padding-left: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -129,9 +129,9 @@ input {
   float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 7px 16px 5px 5px ;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* Change the color of links on hover */
