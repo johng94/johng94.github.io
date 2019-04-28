@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Updates Page</title>
+    <link href="Gen.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -11,21 +12,71 @@
     <!-- Emp is short for Employee
     -->
 
-    Employee First Name : <input type = "text" name = "Emp_F_Name"><br>
+        <div class = "h1class">Employee Updates</div>
 
-    Employee Last Name : <input type = "text" name = "Emp_L_Name"><br>
 
-    Employee Number : <input type = "text" name = "Emp_#"><br>
+<fieldset class = "main-info">
 
-    Employee Address : <input type = "text" name = "Emp_Address"><br>
+    <div class = "center">
 
-    Employee Position : <input type = "text" name = "Emp_Position"><br>
+<label>
+    First Name :
+    </label>
+    <input type = "text" name = "Emp_F_Name"><br>
 
+
+<label>
+    Last Name :
+</label>
+    <input type = "text" name = "Emp_L_Name"><br>
+
+
+<label>
+   Employee Number :
+    </label>
+    <input type = "text" name = "Emp_#"><br>
+
+
+<label>
+    Address :
+    </label>
+    <input type = "text" name = "Emp_Address"><br>
+
+
+<label>
+    Position :
+    </label>
+    <input type = "text" name = "Emp_Position"><br>
+
+
+    </div> <!--connects to center class div-->
+
+
+</fieldset>
+
+<fieldset class = "button">
+
+<!--
+    <input class="btn" type="submit" name="submit" value="Login">
+
+    <label>
+      <input type="checkbox" name="remember"> Stay signed in
+    </label>
+-->
+    <input class = "btn" type="submit" name="submit" value="Update">
+
+     <input class = "btn" type="submit" name="submit" value="Delete">
+
+     <input class = "btn" type="submit" name="submit" value="Add">
+<!--
     <button type = "button"> Update </button>
 
     <button type = "button"> Delete </button>
 
     <button type = "button"> Add </button>
+-->
+
+</fieldset>
 
 </form>
 </body>
