@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Order Management</title>
+    <link href="Gen.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="topnav">
+
+    <a href="Gen_POM.html">POM</a>
+    <a href="Gen_OM.html">OM</a>
+    <a href="Gen_Emp_Delete.html">ED</a>
+    <a href="Gen_Emp_Update.html">EU</a>
+    <a href="Gen_Emp_Add.html">EA</a>
+  <a class="active" href="Home.html">Home</a>
+</div>
+
+
+<form action="PO_add.php" method="post">
+
+        <div class = "h1class">Purchase Order Management</div>
+
+    <!--
+        Purchase Order # is auto generated. Iterated by 1 each time - for each successive purchase order
+    -->
+    <fieldset class = "main-info">
+
+  <br>
+
+<div class = "center">
+
+    <label>
+    Purchase Order # :
+    </label>
+        <input type = "text" name = "Purchase_Order_#"><br>
+
+    <!--
+        You designate the supplier you are using for each PO by entering the supplier name below. Will probably
+        implement a drop down menu for this as well
+    -->
+    <label>
+    Supplier Name :
+    </label>
+        <input type = "text" name = "Supplier_Name"><br>
+
+    <label>
+    Supplier # :
+    </label>
+        <input type = "text" name = "Supplier_#"><br>
+
+    <label>
+    Supplier Address :
+    </label>
+
+        <input type = "text" name = "Supplier_Address"><br>
+    <!--
+        When you select the item you are buying from the supplier, there is a drop down list of
+        available items from that specific supplier
+    -->
+    <label>
+    Item :
+    </label>
+
+
+    <div class = "item-selector">
+    <select name = "item">
+
+        <option value = "widgeta"> Widget A</option>
+        <option value = "widgetb"> Widget B</option>
+        <option value = "widgetc"> Widget C</option>
+        <option value = "widgetd"> Widget D</option>
+
+    </select>
+    </div>
+
+    <label>
+    Quantity :
+    </label>
+        <input type = "text" name = "Quantity"><br>
+
+    <label>
+    Item # :
+    </label>
+        <input type = "text" name = "Item_Number"><br>
+
+    <!--
+        If you want multiple items from one supplier, we can implement an add button below.
+        OR
+        You need to fill out a new PO form..
+    -->
+</div>
+
+</fieldset>
+
+<div class = "text-center">
+
+    <input class = "btn" type="submit" name="submit" value="Purchase">
+
+</div>
+
+
+</form>
+</body>
+</html>

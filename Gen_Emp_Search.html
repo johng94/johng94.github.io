@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Search Page</title>
+    <link href="Gen.css" rel="stylesheet" type="text/css">
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="js-script.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+
+</head>
+<body>
+
+
+    <!-- Emp is short for Employee
+    -->
+    <!--  $stmt = $conn->prepare($queryloc);
+   --  $stmt->execute();-->
+
+        <div class = "h1class">Employee Search</div>
+
+<form method="post" >
+
+    <button type="submit" name="search" style="margin-left: 25px;" formaction="maintEmp.php">Search</button>
+
+
+    <p> <strong> Choose Employee ID: </strong> </p>
+
+
+    <?php
+    $dbhost = "localhost";
+	$dbuser = "root";
+	$dbpass = "";
+	$dbname = "Generico";
+
+	$conn = mysqli_connect(($dbhost, $dbuser, $dbpass, $dbname);
+
+
+	$queryloc = "(SELECT employee_id, CONCAT(employee_lname, '-', employee_fname) AS employee_name from employee)";
+
+    $query = mysqli_query($conn, $queryloc) or die (mysqli_error());
+
+ ?>
+
+    <select name="searchtype" style="margin-left: 25px;" >
+ <?php
+
+ echo ' <option value = "">---Select----</option> ';
+
+         while($d= mysqli_fetch_array($query))
+{
+  $option .= '<option value = "'.$d['employee_id'].'">'.$d['employee_name'].'</option>';
+}
+
+     ?>
+
+</select>
+</form>
+</body>
+
+</html>

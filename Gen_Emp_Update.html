@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Updates Page</title>
+    <link href="Gen.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="topnav">
+
+    <a href="Gen_POM.html">POM</a>
+    <a href="Gen_OM.html">OM</a>
+    <a href="Gen_Emp_Delete.html">ED</a>
+    <a href="Gen_Emp_Update.html">EU</a>
+    <a href="Gen_Emp_Add.html">EA</a>
+  <a class="active" href="Home.html">Home</a>
+</div>
+
+<form action="maintEmp.php" method="post">
+    <!-- Emp is short for Employee
+    -->
+
+        <div class = "h1class">Employee Update</div>
+
+
+<fieldset class = "main-info">
+
+    <br>
+
+    <div class = "center">
+
+<label>
+    First Name :
+    </label>
+    <input type = "text" name = "Emp_F_Name"><br>
+
+
+<label>
+    Last Name :
+</label>
+    <input type = "text" name = "Emp_L_Name"><br>
+
+
+<label>
+    Position :
+    </label>
+    <input type = "text" name = "Emp_Position"><br>
+
+
+<label>
+    New First Name :
+    </label>
+    <input type = "text" name = "New_Emp_F_Name"><br>
+
+
+<label>
+    New Last Name :
+</label>
+    <input type = "text" name = "New_Emp_L_Name"><br>
+
+
+<label>
+    New Position :
+    </label>
+    <input type = "text" name = "New_Emp_Position"><br>
+
+
+    </div> <!--connects to center class div-->
+
+
+</fieldset>
+
+<!--
+    <input class="btn" type="submit" name="submit" value="Login">
+
+    <label>
+      <input type="checkbox" name="remember"> Stay signed in
+    </label>
+-->
+<div class = "text-center">
+
+    <input class = "btn" type="submit" name="submit" value="Update">
+
+
+
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<!--
+    <button type = "button"> Update </button>
+
+    <button type = "button"> Delete </button>
+
+    <button type = "button"> Add </button>
+-->
+
+
+</form>
+</body>
+</html>
